@@ -3,13 +3,708 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gadget shop</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body></body>
+  <body class="text-[#3A3A3A]">
+    <header>
+      <div class="container mx-auto">
+        <!-- nav section start  -->
+        <nav>
+          <div class="navbar bg-base-100 py-10">
+            <div class="navbar-start w-auto flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7"
+                    fill="none"
+                    viewBox="0 -2 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Products</a></li>
+                  <li><a>Sign up</a></li>
+                  <li><a>Log In</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl font-bold">Influencer products</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Products</a></li>
+                <li><a>Sign up</a></li>
+                <li><a>Log In</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end w-auto">
+              <button class="btn btn-ghost btn-circle hidden sm:flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+              <button class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                    />
+                  </svg>
+                  <span
+                    class="badge badge-xs badge-secondary indicator-item"
+                  ></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- nav section finish  -->
+        <div
+          class="banner px-6 my-12 flex flex-col-reverse sm:flex-row justify-between items-center gap-6"
+        >
+          <div class="banner-info">
+            <h1
+              class="font-bold text-3xl md:text-[2.5rem] lg:text-5xl leading-tight lg:leading-snug"
+            >
+              Start your Journey as Influencer
+            </h1>
+            <p class="text-[1rem] lg:text-lg leading-loose my-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              vestibulum sed scelerisque eros. Lectus faucibus.
+            </p>
+            <button class="btn-main rounded-full">
+              <a href=""></a>Preebook now&nbsp;
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div
+            class="banner-image w-10/12 mx-auto sm:w-full flex justify-center items-center relative"
+          >
+            <img
+              class="w-full md:w-11/12 mx-auto"
+              src="images/Circle design.svg"
+              alt=""
+            />
+            <div class="camera w-full absolute">
+              <img class="w-11/12" src="images/main-camera.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section finish -->
+    <section class="ecommerce w-10/12 mx-auto my-16">
+      <hr />
+      <div
+        class="ecommerce-name grid grid-cols-4 md:grid-cols-7 gap-7 justify-center items-center py-4"
+      >
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Alibaba.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Amazon.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Daraz.pk Logo.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Ebay.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Rakuten.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Walmart.svg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-10/12 sm:w-8/12 md:w-10/12 mx-auto"
+            src="logos/Target.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr />
+    </section>
+    <!-- ecommerce section finish  -->
+    <!-- collection section start  -->
+    <section class="collection w-10/12 md:w-11/12 mx-auto my-16">
+      <h3 class="text-3xl md:text-4xl text-center">Popular Collection</h3>
+      <div
+        class="gadgets grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12"
+      >
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/tripod.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Flex Tripod
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$50.48</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/mic.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              microphone
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$120.25</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/airpod.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Airbuds
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$100.00</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/drone.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Drone
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$980.25</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/lights.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Light Setup
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$1200.00</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/setup.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Photoshoot set
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$820.40</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/camera.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Vlogging Camera
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$1800.80</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/single-light.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Green Screen
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$25.48</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+        <div class="card w-auto bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-11/12 mt-4 mx-auto" src="images/tripod.png" />
+          </figure>
+          <div class="card-body space-y-1">
+            <h2 class="card-title text-2xl">
+              Action Camera
+              <div class="badge badge-secondary">NEW</div>
+            </h2>
+            <p class="text-2xl font-light">$380.00</p>
+            <div class="flex gap-4 justify-center items-center">
+              <div class="rating rating-xs">
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-5"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+              </div>
+              <p class="text-sm font-normal">4.99</p>
+            </div>
+            <p class="text-sm leading-relaxed">
+              Wordwide shifting <br />
+              available <br />
+              Buyers protection possible!
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="text-sm text-right block w-full mt-5">
+        <a class="text-secondary" href="">See More--></a>
+      </p>
+    </section>
+    <!-- gafgedt section finish  -->
+    <section class="featured-banner w-10/12 md:w-11/12 mx-auto my-16">
+      <div class="hero">
+        <div class="hero-content flex-col md:flex-row gap-11">
+          <img class="" src="images/gear.png" alt="" />
+
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold">
+              Featured products at one place
+            </h1>
+            <p class="py-6 text-[1rem] leading-relaxed">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="btn-main">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured banner finish  -->
+    <footer class="footer footer-center p-10 text-white">
+      <aside>
+        <h4 class="font-bold text-xl">Influencer products</h4>
+        <p class="text-sm">Copyright © 2020 influencer products</p>
+        <p class="text-xs">All rights reserved</p>
+      </aside>
+      <div class="links">
+        <ul class="flex flex-row gap-3">
+          <li>
+            <a
+              class="btn glass text-white rounded-full hover:text-secondary"
+              href=""
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="btn glass text-white rounded-full hover:text-secondary"
+              href=""
+              ><i class="fa-brands fa-dribbble"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="btn glass text-white rounded-full hover:text-secondary"
+              href=""
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="btn glass text-white rounded-full hover:text-secondary"
+              href=""
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
